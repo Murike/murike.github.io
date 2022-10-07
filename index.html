@@ -49,7 +49,19 @@
         }
 
         .logos {
-            fill: white; 
+            fill: white;
+            display: flex;
+            justify-content: center;
+            transform: translateY(-400%);
+        }
+
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        
+        .fade-in-image {
+            animation: fadeIn 5s;
         }
 
     </style>
@@ -58,10 +70,10 @@
     <div class="parallax row">
         <div class="column">.</div>
         <div class="column">
-            <div class="effect-phrase">The best a man can get.</div>
+            <div class="effect-phrase fade-in-image">The best a man can get.</div>
             <div class="meme">
                 <img src="images/is this a job.jpg"> 
-                <a href="https://www.linkedin.com/in/ricardo-maurique/" class="fa-brands fa-linkedin fa-2xl logos"></a>
+                <a href="https://www.linkedin.com/in/ricardo-maurique/" class="fa-brands fa-linkedin fa-5x logos"></a>
             </div>
         </div>
     </div>
