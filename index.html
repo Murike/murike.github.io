@@ -1,1 +1,69 @@
-Hello Worlds
+<head>
+    <script src="https://kit.fontawesome.com/0e3955aa1a.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100vh;
+            height: 1200;
+        }
+
+        .effect-phrase {
+            font-family: 'Tangerine', cursive;
+            font-size: 100px;
+            color: white;
+            mix-blend-mode: difference;
+            filter: drop-shadow(5px 10px 4px #4444dd);
+            overflow-y: auto;
+            height: 100vh;
+            /* text-align:right; */
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        
+        .parallax {
+            /* The image used */
+            background-image: url("images/hackerman.jpg");
+
+            height: 100%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .logos {
+            fill: white; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parallax row">
+        <div class="column">.</div>
+        <div class="column">
+            <div class="effect-phrase">The best a man can get.</div>
+            <div class="meme">
+                <img src="images/is this a job.jpg"> 
+                <a href="https://www.linkedin.com/in/ricardo-maurique/" class="fa-brands fa-linkedin fa-2xl logos"></a>
+            </div>
+        </div>
+    </div>
+    
+</body>
